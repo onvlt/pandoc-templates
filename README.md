@@ -1,6 +1,6 @@
-# Pandoc context templates
+# Pandoc ConTeXt templates
 
-Pandoc templates I use for producing nice-looking PDF writings.
+[Pandoc](https://pandoc.org/) templates I use for producing nice-looking PDF writing via [ConTeXt](https://wiki.contextgarden.net/Main_Page).
 
 ## Prerequisities
 
