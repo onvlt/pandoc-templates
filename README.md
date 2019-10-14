@@ -3,7 +3,7 @@
 [Pandoc](https://pandoc.org/) templates I use for producing nice-looking PDF writings. These templates use powerful [ConTeXt](https://wiki.contextgarden.net/Main_Page) macro package.
 
 <p align="center">
-  <img src="./example.png" width="600" />
+  <img src="./template-examle.png" width="600" />
 </p>
 
 ## Prerequisities
