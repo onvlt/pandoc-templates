@@ -86,7 +86,7 @@ $endif$
 \definefontfamily[mainface][ss][$if(sansfont)$$sansfont$$else$IBM Plex Sans$endif$]
 \definefontfamily[mainface][tt][$if(monofont)$$monofont$$else$IBM Plex Mono$endif$][features=none]
 \definefontfamily[mainface][mm][$if(mathfont)$$mathfont$$else$Latin Modern Math$endif$]
-\setupbodyfont[mainface$if(fontsize)$,$fontsize$$else$,11pt$endif$]
+\setupbodyfont[mainface$if(fontsize)$,$fontsize$$else$,10pt$endif$]
 
 \setupwhitespace[$if(whitespace)$$whitespace$$else$medium$endif$]
 
@@ -98,11 +98,11 @@ $if(interlinespace)$
 \setupinterlinespace[$for(interlinespace)$$interlinespace$$sep$,$endfor$]
 $endif$
 
-\setuphead[chapter]            [style=\tfc,header=empty]
-\setuphead[section]            [style=\tfb\bf]
-\setuphead[subsection]         [style=\tfa\bf]
-\setuphead[subsubsection]      [style=\bf]
-\setuphead[subsubsubsection]   [style=\it]
+\setuphead[chapter][style=\tfc,header=empty]
+\setuphead[section][style=\tfb\bf]
+\setuphead[subsection][style=\tfa\bf]
+\setuphead[subsubsection][style=\bf]
+\setuphead[subsubsubsection][style=\it]
 \setuphead[subsubsubsubsection][style=\it]
 
 % ToC

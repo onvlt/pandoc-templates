@@ -1,11 +1,13 @@
-# Pandoc ConTeXt templates
+# 📝 Pandoc ConTeXt templates
 
-[Pandoc](https://pandoc.org/) templates I use for producing nice-looking PDF writing via [ConTeXt](https://wiki.contextgarden.net/Main_Page).
+[Pandoc](https://pandoc.org/) templates I use for producing nice-looking PDF writings. These templates use powerful [ConTeXt](https://wiki.contextgarden.net/Main_Page) macro package.
+
+<img src="./example.png" width="400" />
 
 ## Prerequisities
 
 - TeX distribution
-- Fonts: IMB Plex Serif, IMB Plex Sans, IMB Plex Mono
+- IBM Plex font family (IMB Plex Serif, IMB Plex Sans, IMB Plex Mono)
 
 ## Installation
 
