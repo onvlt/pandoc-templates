@@ -10,18 +10,18 @@ $endif$
 % Enable hyperlinks
 \setupinteraction[
   state=start,
-  $if(title)$
+$if(title)$
   title={$title$},
-  $endif$
-  $if(subtitle)$
+$endif$
+$if(subtitle)$
   subtitle={$subtitle$},
-  $endif$
-  $if(author)$
+$endif$
+$if(author)$
   author={$for(author)$$author$$sep$; $endfor$},
-  $endif$
-  $if(keywords)$
+$endif$
+$if(keywords)$
   keyword={$for(keywords)$$keywords$$sep$; $endfor$},
-  $endif$
+$endif$
   style=$linkstyle$,
   color=$linkcolor$,
   contrastcolor=$linkcontrastcolor$
