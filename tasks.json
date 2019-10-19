@@ -1,0 +1,35 @@
+{
+  // These are tasks template for VS Code. If you are using VS Code,
+  // copy this file to `.vscode/tasks.json` (relative to project root).
+  // Then you can run build tasks from command palette.
+  //
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "label": "Compile markdown to PDF",
+          "type": "shell",
+          "command": "pandoc '${file}' -o '${file}.pdf' -t context --template=custom --resource-path=\"(dirname ${file})\"",
+          "group": "build",
+          "problemMatcher": []
+      },
+      {
+          "label": "Compile markdown to PDF and open",
+          "type": "shell",
+          "command": "pandoc '${file}' -o '${file}.pdf' -t context --template=custom --resource-path=\"(dirname ${file})\" && open '${file}.pdf'",
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          },
+          "problemMatcher": []
+      },
+      {
+          "label": "Compile markdown to ConTeXt",
+          "type": "shell",
+          "command": "pandoc '${file}' -o '${file}.tex' -t context --template=custom --resource-path=\"(dirname ${file})\"",
+          "group": "build",
+          "problemMatcher": []
+      }
+  ]
+}
