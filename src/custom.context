@@ -1,7 +1,6 @@
 $if(context-lang)$
 \mainlanguage[$context-lang$]
 $endif$
-
 $if(context-dir)$
 \setupalign[$context-dir$]
 \setupdirections[bidi=on,method=two]
@@ -35,7 +34,6 @@ $endif$
 $if(papersize)$
 \setuppapersize[$for(papersize)$$papersize$$sep$,$endfor$]
 $endif$
-
 $if(layout)$
 \setuplayout[$for(layout)$$layout$$sep$,$endfor$]
 $else$
@@ -44,12 +42,10 @@ $else$
   backspace=3cm,topspace=1.2cm
 ]
 $endif$
-
 $if(disablepagenumbering)$
 $else$
 \setuppagenumbering[location={footer,middle}]
 $endif$
-
 $if(pdfa)$
 % attempt to generate PDF/A
 \setupbackend[
@@ -93,7 +89,6 @@ $endif$
 $if(indenting)$
 \setupindenting[$for(indenting)$$indenting$$sep$,$endfor$]
 $endif$
-
 $if(interlinespace)$
 \setupinterlinespace[$for(interlinespace)$$interlinespace$$sep$,$endfor$]
 $endif$
@@ -116,11 +111,9 @@ $endif$
 $if(headertext)$
 \setupheadertexts$for(headertext)$[$headertext$]$endfor$
 $endif$
-
 $if(footertext)$
 \setupfootertexts$for(footertext)$[$footertext$]$endfor$
 $endif$
-
 $if(number-sections)$
 $else$
 \setuphead[chapter, section, subsection, subsubsection, subsubsubsection, subsubsubsubsection][number=no]
@@ -175,42 +168,35 @@ $for(header-includes)$
 $header-includes$
 $endfor$
 
-\definestartstop[centeredpage][
-  before=\dontleavehmode \vfill,
-  after=\vfill,
-]
-
 \starttext
-
 $if(title)$
 % Title page
 \startstandardmakeup
-\startalignment[middle]{\tfd \setupinterlinespace $title$ \par}
-
+  \startalignment[middle]
+$if(title)$
+    {\tfd \setupinterlinespace $title$ \par}
+$endif$
 $if(subtitle)$
-\blank[big]
-{\tfa \setupinterlinespace $subtitle$ \par}
+    \blank[big]
+    {\tfa \setupinterlinespace $subtitle$ \par}
 $endif$
-
 $if(author)$
-\blank[2*big]
-{\tfa \it $for(author)$$author$$sep$\crlf $endfor$}
+    \blank[2*big]
+    {\tfa \it $for(author)$$author$$sep$\crlf $endfor$}
 $endif$
-
 $if(date)$
-\blank[2*big]
-{\tfa $date$}
+    \blank[2*big]
+    {\tfa $date$}
 $endif$
-\blank[2*big]
-
-\stopalignment
+    \blank[2*big]
+  \stopalignment
 \stopstandardmakeup
+% End of title page
 
 % Blank page after title page
 \startstandardmakeup
 \stopstandardmakeup
-$endif$ % End of title
-
+$endif$
 $if(abstract)$
 \midaligned{\it Abstract}
 \startnarrower[2*middle]
@@ -218,20 +204,16 @@ $abstract$
 \stopnarrower
 \blank[big]
 $endif$
-
 $for(include-before)$
 $include-before$
 $endfor$
-
 $if(toc)$
 \completecontent
 \page
 $endif$
-
 $if(lot)$
 \completelistoftables
 $endif$
-
 $if(lof)$
 \completelistoffigures
 $endif$
