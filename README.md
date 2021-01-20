@@ -1,6 +1,6 @@
 # 📝 Pandoc ConTeXt templates
 
-[Pandoc](https://pandoc.org/) templates I use for producing nice-looking PDF writings. These templates use powerful [ConTeXt](https://wiki.contextgarden.net/Main_Page) macro package.
+[Pandoc](https://pandoc.org/) templates I use for producing nice-looking PDF writings. These templates use powerful TeX-based [ConTeXt](https://wiki.contextgarden.net/Main_Page) document processor.
 
 <p align="center">
   <img src="./template-example.png" width="600" />
